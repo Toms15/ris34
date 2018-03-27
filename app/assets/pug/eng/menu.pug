@@ -1,0 +1,51 @@
+extend layouts/master
+
+block title
+	| Ristorante 34 - Menu
+
+block append metatags 
+	meta(name='description', content='A description of the page')
+
+block content
+	// Hero page image
+	.hero__page.hero__page--menu
+	
+	// Page container
+	.grid-container
+		.page__container.page__container--home
+			.grid-x
+				.large-9.medium-7.small-12.column
+					.main__content
+						.grid-x
+							.large-12.medium-12.small-12.column
+								h2 La nostra cucina
+								p
+									| La nostra cucina è quella tradizionale, romana ed italiana, ma nello stesso tempo anche molto creativa; questo grazie all'attenzione dei proprietari e alla genialità del figlio Nicola Casalini, i quali hanno saputo stare al passo coi tempi, cercando di poter dare al cliente la più alta e vasta scelta dei prodotti, senza però influire mai sulla qualità.
+								p
+									| La politica del '34, da quando ha aperto nel 1968 ad oggi, è stata sempre quella di offrire al cliente "il meglio" a prezzi ragionevoli. Il nostro Menu offre davvero un’infinità di piatti: dagli sfiziosi antipasti alle infinite varietà di pasta, dalla carne al pesce, per poi passare ai piatti di mezzo, fino ad arrivare ai dolci, tutti fatti da noi; e alla carta dei vini, la quale, con l'aiuto di Renzo, storico cameriere del '34 insieme a Sandro, anche questa è stata perfezionata, offrendo al cliente ottimi prodotti da poter accompagnare alle portate.
+								p
+									| Offriamo tutti i piatti romani più rinomati e più tradizionali, ma ovviamente senza tralasciare tutto il resto, che spazia da piatti meridionali a quelli più nordici, mettendo così a disposizione una “cucina italiana a 360 gradi”. Come iniziare poi a degustare tutto questo, senza assaggiare prima la famosa “zuppa di pasta e ceci con le seppie”, ormai rinomata in tutto il mondo...
+								p
+									| Qui di seguito potete trovare il Menu nella lingua che preferite:
+								a.menu__button(href="/images/download/menu_italiano_ristorante34.pdf", target="_blank")
+									.lang.ita
+									span Scarica il menu
+								a.menu__button(href="/images/download/menu_inglese_ristorante34.pdf", target="_blank")
+									.lang.eng
+									span Download menu
+								a.menu__button(href="/images/download/menu_russo_ristorante34.pdf", target="_blank")
+									.lang.rus
+									span скачать меню
+								a.menu__button(href="/images/download/menu_giapponese_ristorante34.pdf", target="_blank")
+									.lang.jap
+									span メニューをダウンロード
+								a.menu__button(href="/images/download/menu_francese_ristorante34.pdf", target="_blank")
+									.lang.fra
+									span Télécharger le Menu
+				.large-3.medium-5.small-12.column
+					.sidebar__content
+						img(src="/images/decoration-top.png", alt="")
+						img(src="/images/cuoco.jpg", alt="")
+						h6 Nicola
+						img(src="/images/staff-duo.jpg", alt="")
+						img(src="/images/decoration-bottom.png", alt="")

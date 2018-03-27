@@ -1,0 +1,38 @@
+.hero__page {
+	width: 100%;
+	background-color: rgba($black,.1);
+	height: 25vh;
+	&.hero__page--home {
+		background: url('/images/homepage.jpg') no-repeat center center;
+		background-size: cover !important;
+	}
+	&.hero__page--about {
+		background: url('/images/chi-siamo.jpg') no-repeat center center;
+		background-size: cover !important;
+	}
+	&.hero__page--menu {
+		background: url('/images/menu.jpg') no-repeat center center;
+		background-size: cover !important;
+	}
+	&.hero__page--gallery {
+		background: url('/images/gallery.jpg') no-repeat center center;
+		background-size: cover !important;
+	}
+	&.hero__page--contact {
+		background: url('/images/contact.jpg') no-repeat center center;
+		background-size: cover !important;
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.hero__page {
+		height: 50vh;
+		max-height: 450px;
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

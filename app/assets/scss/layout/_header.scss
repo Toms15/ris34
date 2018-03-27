@@ -1,0 +1,222 @@
+.entry__menu {
+	background-color: $white;
+	height: calc(100vh - 60px);
+	position: fixed;
+	z-index: 998;
+	top: 60px;
+	width: 100vw;
+	left: 0;
+	transform: translateX(-100%);
+	transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+	&.show {
+		transform: translateX(0);
+		transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+	}
+	nav {
+		ul {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			width: 100vw;
+			height: 50vh;
+			padding: 0;
+			margin: 0;
+			li {
+				list-style-type: none;
+				margin: 1rem 0;
+				a {
+					font-family: 'Old Standard TT', serif;
+					font-weight: 400;
+					font-size: 1rem;
+					color: $black;
+					&:hover,
+					&:focus,
+					&:active {
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+	.more__option {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-direction: column;
+		padding-bottom: 2rem;
+		span {
+			font-size: 1rem;
+			color: $red;
+			font-family: 'Old Standard TT', serif;
+			margin-bottom: 1rem;
+		}
+		.language {
+			span {
+				width: 20px;
+				height: 20px;
+				margin: 0 0 0 10px;
+				border-radius: 100%;
+				display: inline-block;
+				border: 1px solid rgba($black,.2);
+				&.ita {
+					background: url('/images/language/it.png') no-repeat center center;
+					background-size: 25px 40px;
+				}
+				&.eng {
+					background: url('/images/language/gb.png') no-repeat center center;
+					background-size: 30px;
+				}
+				&.jap {
+					background: url('/images/language/jp.png') no-repeat center center;
+					background-size: 25px;
+				}
+				&.rus {
+					background: url('/images/language/ru.png') no-repeat center center;
+					background-size: 30px;
+				}
+			}
+		}
+	}
+}
+header {
+	z-index: 999 !important;
+	background-color: $white;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1rem;
+	position: relative;
+	.logo {
+		height: 60px;
+		margin-top: -10px;
+	}
+	.mobile__menu {
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		.line {
+			height: 2px;
+			background-color: $red;
+			transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+			width: 30px;
+			&:nth-of-type(2) {
+				margin: 5px 0;
+			}
+		}
+		&.shrink {
+			.line {
+				transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+				background-color: $red;
+				&:nth-of-type(2) {
+					margin: 0;
+				}
+			}
+		}
+	}
+	.content__nav {
+		display: none;
+	} 
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	header {
+		height: 100px;
+		padding: 0 2rem;
+		.logo {
+			height: 80px;
+			margin-top: -15px;
+		}
+		.mobile__menu {
+			display: none;
+		}
+		.content__nav {
+			display: block;
+			.more__option {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				margin-top: 5px;
+				span {
+					font-style: italic;
+					font-size: 1rem;
+					color: $red;
+					font-family: 'Old Standard TT', serif;
+				}
+				.language {
+					padding: 0 .5rem 0 1rem;
+					border-left: 1px solid $red;
+					margin-left: 1rem;
+					a {
+						width: 20px;
+						height: 20px;
+						margin: 0 0 0 5px;
+						border-radius: 100%;
+						display: inline-block;
+						border: 1px solid rgba($black,.2);
+						&.ita {
+							background: url('/images/language/it.png') no-repeat center center;
+							background-size: 25px 40px;
+						}
+						&.eng {
+							background: url('/images/language/gb.png') no-repeat center center;
+							background-size: 30px;
+						}
+						&.jap {
+							background: url('/images/language/jp.png') no-repeat center center;
+							background-size: 25px;
+						}
+						&.rus {
+							background: url('/images/language/ru.png') no-repeat center center;
+							background-size: 30px;
+						}
+					}
+				}
+			}
+			nav {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 75px;
+				ul {
+					margin: 0;
+					li {
+						list-style-type: none;
+						display: inline-block;
+						a {
+							padding: 0 1rem;
+							font-family: 'Old Standard TT', serif;
+							font-weight: 400;
+							font-size: 1.3rem;
+							color: rgba($black,.75);
+							border-right: 1px dashed $red;
+							&:hover,
+							&:focus,
+							&:active {
+								color: $red;
+							}
+						}
+						&:last-of-type {
+							a {
+								border: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

@@ -1,0 +1,54 @@
+.cfgen-form-container {
+	width: 100%;
+	label {
+		color: $beige;
+		font-family: 'Old Standard TT', serif;
+		font-weight: 400;
+	}
+	input {
+		border: 0;
+		background-color: $beige;
+		color: $black;
+		&:focus {
+			border: 0;
+			background-color: $beige;
+			box-shadow: none;
+		}
+		&[type="submit"] {
+			padding: .5rem 1rem;
+			margin: 2rem auto 1rem;
+			display: block;
+			font-family: 'Old Standard TT', serif;
+			font-weight: 400;
+			background-color: $white;
+			color: $black;
+		}
+	}
+	textarea {
+		background-color: $beige;
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		color: $black;
+		height: 150px;
+		max-height: 150px;
+		min-height: 150px;
+		&:focus {
+			border: 0;
+			background-color: $beige;
+			box-shadow: none;
+		}
+	}
+	img {
+		height: auto;
+		width: auto !important;
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
