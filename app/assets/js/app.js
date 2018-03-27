@@ -61,7 +61,7 @@ $(document).ready(function() {
   // Google Maps
   // ----------------------------------------
   $(function() {
-    function initialize() {       
+    function initialize() {
       var mapOptions = {
         center: new google.maps.LatLng(41.906300,12.480809),
         zoom: 12,
@@ -79,7 +79,7 @@ $(document).ready(function() {
                   }
               ]
           }
-      ]    
+      ]
       };
       var map = new google.maps.Map(document.getElementById("map-ris34"),
         mapOptions);
@@ -105,9 +105,37 @@ $(document).ready(function() {
 
     var newLang = $(this).data("lang");
 
-    var urlPieces[] = window.location.pathname.split( '/' );
+    var urlPieces = window.location.pathname.split( '/' );
 
-    console.log(urlPieces[1]);
+    var langs = ['eng', 'ita', 'jap', 'rus'];
+
+    if(newLang == 'ita'){
+
+        if(urlPieces.length == 2 && !langs.includes(urlPieces[1])){
+            window.location.href = '/' + urlPieces[1];
+        }
+
+        if(urlPieces.length == 3 && !langs.includes(urlPieces[2]) &&  langs.includes(urlPieces[1])){
+            window.location.href = '/' + urlPieces[2];
+        }
+
+    }else{
+        if(urlPieces.length == 2 && !langs.includes(urlPieces[1])){
+            window.location.href = '/' + newLang + '/' + urlPieces[1];
+        }
+
+        if(urlPieces.length == 3 && !langs.includes(urlPieces[2]) &&  langs.includes(urlPieces[1])){
+            window.location.href = '/' + newLang + '/' + urlPieces[2];
+        }
+    }
+
+    console.log(newLang);
+    console.log(urlPieces);
+    console.log(langs);
+    console.log(urlPieces.length);
+    console.log(langs.includes(urlPieces[1]));
+
+
 
   });
 

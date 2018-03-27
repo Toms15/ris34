@@ -46,7 +46,7 @@ gulp.task('scss', ['pug'], () => {
 
 gulp.task('js', ['pug'], () => {
   return gulp.src('app/assets/js/*.js')
-    .pipe($.uglify())
+    // .pipe($.uglify())
     .pipe(gulp.dest('build/js'))
     .pipe(browserSync.stream());
 });
@@ -195,7 +195,7 @@ gulp.task('serve', () => {
     });
 
     gulp.watch('app/assets/pug/**/*.pug', ['pug']);
-    gulp.watch('app/assets/js/*.js', ['js']);  
+    gulp.watch('app/assets/js/*.js', ['js']);
     gulp.watch('app/assets/scss/**/*.scss', ['scss']);
 });
 
