@@ -46,7 +46,7 @@ gulp.task('scss', ['pug'], () => {
 
 gulp.task('js', ['pug'], () => {
   return gulp.src('app/assets/js/*.js')
-    // .pipe($.uglify())
+    .pipe($.uglify())
     .pipe(gulp.dest('build/js'))
     .pipe(browserSync.stream());
 });
@@ -62,7 +62,7 @@ gulp.task('js', ['pug'], () => {
 */
 
 gulp.task('pug', () => {
-  return gulp.src(['app/assets/pug/**/*.pug', '!app/assets/pug/layouts/**/*', '!app/assets/pug/eng/layouts/**/*'])
+  return gulp.src(['app/assets/pug/**/*.pug', '!app/assets/pug/layouts/**/*', '!app/assets/pug/eng/layouts/**/*', '!app/assets/pug/rus/layouts/**/*', '!app/assets/pug/jap/layouts/**/*'])
     .pipe($.changed('build', {extension: '.html', hasChanged: $.changed.compareContents}))
     .pipe($.plumber())
     .pipe($.pug({pretty:true}))

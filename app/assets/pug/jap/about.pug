@@ -1,0 +1,37 @@
+extend layouts/master
+
+block title
+	| Ristorante 34 - アバウト
+
+block append metatags 
+	meta(name='description', content='A description of the page')
+
+block content
+	// Hero page image
+	.hero__page.hero__page--about
+	
+	// Page container
+	.grid-container
+		.page__container.page__container--home
+			.grid-x
+				.large-9.medium-7.small-12.column
+					.main__content
+						.grid-x
+							.large-12.medium-12.small-12.column
+								h2 リストランテ　アル・トレンタクアットロ
+								p
+									| すべては１９６８年に始まった。当時、エミリア・ローマニャの海岸沿いで戦後に建設された、ミラノ・マリッティマのホテル・インテルナツォナーレを売ったヴァルテル　カサリーニは、ローマで長い歴史を持つマリオ・デ・フィオーリ通りで「リストランテ　アル・トレンタクアットロ」をオープン。 妻のマリア・ルイサと、ここで味わえる様々なメニューの大部分を創作したオーナーの息子、ニコーラの協力で、レストランは当時から伝統と改新をもとに営まれてきました。 
+								p
+									| 「トレンタクアットロ」の当初のメニューは、ローマニャ州の典型的な風味を永遠の都ローマの中心街に導入しました。年々、時代の変化に対してもカサリーニ家のこの仕事に向けての愛と心がけのお陰で、ローマでも最も人気のあるレストランの一つになり、本格的なイタリア料理を更に改良させた「トレンタクアットロ」は世界中の人々から人気を得ました。
+								p
+									| バラエティに富む料理だけでなく、このレストランは様々な特徴を持っています。まず、永遠の都ローマの中心街にあるスペイン広場という絶好な位置。２０年以上の経験でもって、お客様に様々なサービスを与え続けるスタッフと家庭的な雰囲気でテーブールを回るオーナーの温かな歓迎。マリア・ルイサ婦人の「タッチ」を加え、リラックスしながら古き良き時代に浸れます。
+								p
+									| また、創業者の孫に当たるグリエルモとガブリエーレの若さならではのテイストもインプットされ、リノベーション、ノスタルジーの入り混じったレストランとなりました。 このレストランの壁がものを言うなら、「トレンタクアットロ」を訪れた著名人の面白いストリーの数々を語る事でしょう。後は、あなたのお越しを待ち望むのみ．．．
+				.large-3.medium-5.small-12.column
+					.sidebar__content
+						img(src="/images/decoration-top.png", alt="")
+						img(src="/images/nonni.jpg", alt="")
+						h6 マリア・ルイサとヴァルテル
+						img(src="/images/staff.jpg", alt="")
+						h6 ウィリアムとガブリエル
+						img(src="/images/decoration-bottom.png", alt="")

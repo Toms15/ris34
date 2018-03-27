@@ -65,7 +65,7 @@ $cfg['usernotification_message'] = '';
 
 $cfg['usernotification_hideemptyvalues'] = false;
 
-$cfg['formvalidation_required'] = array('cfgen-element-5-6','cfgen-element-5-3');
+$cfg['formvalidation_required'] = array('cfgen-element-5-6','cfgen-element-5-3','cfgen-element-5-8');
 
 $cfg['formvalidation_email'] = array('cfgen-element-5-3');
 

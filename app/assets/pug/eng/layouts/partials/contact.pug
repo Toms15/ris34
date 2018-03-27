@@ -2,7 +2,7 @@
   .cfgen-form-content
     .cfgen-e-c
       label#cfgen-element-5-6-label.cfgen-label
-        span.cfgen-label-value Nome
+        span.cfgen-label-value Name
         span.cfgen-required *
       | &#x9;
       #cfgen-element-5-6-set-c.cfgen-e-set
@@ -24,7 +24,7 @@
       .cfgen-clear
     .cfgen-e-c
       label#cfgen-element-5-4-label.cfgen-label
-        span.cfgen-label-value Messaggio
+        span.cfgen-label-value Message
       | &#x9;
       #cfgen-element-5-4-set-c.cfgen-e-set
         #cfgen-element-5-4-inputgroup-c.cfgen-input-group
@@ -34,12 +34,12 @@
       .cfgen-clear
     .cfgen-e-c
       label#cfgen-element-5-7-label.cfgen-label
-        span.cfgen-label-value Inserisci il codice
+        span.cfgen-label-value Insert the code below
       | &#x9;
       #cfgen-element-5-7-set-c.cfgen-e-set
         .cfgen-captcha-c
-          img.cfgen-captcha-img(src='cfgen-form-5/inc/captcha.php', alt='')
-          img.cfgen-captcha-refresh(src='cfgen-form-5/img/captcha-refresh.png', alt='')
+          img.cfgen-captcha-img(src='/cfgen-form-5/inc/captcha.php', alt='')
+          img.cfgen-captcha-refresh(src='/cfgen-form-5/img/captcha-refresh.png', alt='')
         | &#x9;&#x9;
         #cfgen-element-5-7-inputgroup-c.cfgen-input-group
           #cfgen-element-5-7-input-c.cfgen-input-c
@@ -47,8 +47,22 @@
       | &#x9;
       .cfgen-clear
     .cfgen-e-c
+      label#cfgen-element-5-8-label.cfgen-label
+        span.cfgen-label-value
+        //- span.cfgen-required *
+      #cfgen-element-5-8-set-c.cfgen-e-set
+        #cfgen-element-5-8-inputgroup-c.cfgen-input-group
+          .cfgen-option-set
+            .cfgen-option-content.cfgen-option-checkbox.cfgen-element-5-8-option-content
+              input#cfgen-element-5-8-0.cfgen-form-value(type='checkbox', name='cfgen-element-5-8', value='We inform you that your e-mail address will be used exclusively to respond to your request, and treated according to the terms described in the privacy policy (Article 13 of Legislative Decree No. 196/2003).')
+              label(for='cfgen-element-5-8-0')
+                | We inform you that your e-mail address will be used exclusively to respond to your request, and treated according to the terms described in the 
+                a(href="/privacy.html", target="_blank") privacy policy
+                |  (Article 13 of Legislative Decree No. 196/2003).
+      .cfgen-clear
+    .cfgen-e-c
       #cfgen-element-5-5-set-c.cfgen-e-set
         #cfgen-element-5-5-inputgroup-c.cfgen-input-group
           #cfgen-element-5-5-input-c.cfgen-input-c
-            input#cfgen-element-5-5.cfgen-submit(type='submit', name='cfgen-element-5-5', value='Invia')
+            input#cfgen-element-5-5.cfgen-submit(type='submit', name='cfgen-element-5-5', value='Send')
     .cfgen-loading

@@ -17,6 +17,13 @@ footer {
 		img {
 			width: 100%;
 		}
+		a {
+			img {
+				&:hover {
+					opacity: .5;
+				}
+			}
+		}
 		ul {
 			li {
 				font-family: 'Old Standard TT', serif;
@@ -39,6 +46,9 @@ footer {
 			font-size: 2rem;
 			color: $white;
 			margin: 0 1rem 0 0;
+			&:hover {
+				color: $red;
+			}
 		}
 		p {
 			margin-bottom: 1rem;

@@ -1,0 +1,68 @@
+#cfgen-form-5.cfgen-form-container
+  .cfgen-form-content
+    .cfgen-e-c
+      label#cfgen-element-5-6-label.cfgen-label
+        span.cfgen-label-value Имя
+        span.cfgen-required *
+      | &#x9;
+      #cfgen-element-5-6-set-c.cfgen-e-set
+        #cfgen-element-5-6-inputgroup-c.cfgen-input-group
+          #cfgen-element-5-6-input-c.cfgen-input-c
+            input#cfgen-element-5-6.cfgen-type-text.cfgen-form-value(type='text', name='cfgen-element-5-6')
+      | &#x9;
+      .cfgen-clear
+    .cfgen-e-c
+      label#cfgen-element-5-3-label.cfgen-label
+        span.cfgen-label-value E-mail
+        span.cfgen-required *
+      | &#x9;
+      #cfgen-element-5-3-set-c.cfgen-e-set
+        #cfgen-element-5-3-inputgroup-c.cfgen-input-group
+          #cfgen-element-5-3-input-c.cfgen-input-c
+            input#cfgen-element-5-3.cfgen-type-email.cfgen-form-value(type='text', name='cfgen-element-5-3')
+      | &#x9;
+      .cfgen-clear
+    .cfgen-e-c
+      label#cfgen-element-5-4-label.cfgen-label
+        span.cfgen-label-value Сообщение
+      | &#x9;
+      #cfgen-element-5-4-set-c.cfgen-e-set
+        #cfgen-element-5-4-inputgroup-c.cfgen-input-group
+          #cfgen-element-5-4-input-c.cfgen-input-c
+            textarea#cfgen-element-5-4.cfgen-type-textarea.cfgen-form-value(name='cfgen-element-5-4')
+      | &#x9;
+      .cfgen-clear
+    .cfgen-e-c
+      label#cfgen-element-5-7-label.cfgen-label
+        span.cfgen-label-value Вставьте код ниже
+      | &#x9;
+      #cfgen-element-5-7-set-c.cfgen-e-set
+        .cfgen-captcha-c
+          img.cfgen-captcha-img(src='/cfgen-form-5/inc/captcha.php', alt='')
+          img.cfgen-captcha-refresh(src='/cfgen-form-5/img/captcha-refresh.png', alt='')
+        | &#x9;&#x9;
+        #cfgen-element-5-7-inputgroup-c.cfgen-input-group
+          #cfgen-element-5-7-input-c.cfgen-input-c
+            input#cfgen-element-5-7.cfgen-captcha-input(type='text', name='cfgen-element-5-7')
+      | &#x9;
+      .cfgen-clear
+    .cfgen-e-c
+      label#cfgen-element-5-8-label.cfgen-label
+        span.cfgen-label-value
+        //- span.cfgen-required *
+      #cfgen-element-5-8-set-c.cfgen-e-set
+        #cfgen-element-5-8-inputgroup-c.cfgen-input-group
+          .cfgen-option-set
+            .cfgen-option-content.cfgen-option-checkbox.cfgen-element-5-8-option-content
+              input#cfgen-element-5-8-0.cfgen-form-value(type='checkbox', name='cfgen-element-5-8', value='Сообщаем вам, что ваш адрес электронной почты будет использоваться для ответа на ваш запрос и будет рассматриваться в соответствии с условиями, описанными в политике конфиденциальности (статья 13 Законодательного декрета № 196/2003).')
+              label(for='cfgen-element-5-8-0')
+                | Сообщаем вам, что ваш адрес электронной почты будет использоваться для ответа на ваш запрос и будет рассматриваться в соответствии с условиями, описанными в 
+                a(href="/privacy.html", target="_blank") политике конфиденциальности
+                |  (статья 13 Законодательного декрета № 196/2003).
+      .cfgen-clear
+    .cfgen-e-c
+      #cfgen-element-5-5-set-c.cfgen-e-set
+        #cfgen-element-5-5-inputgroup-c.cfgen-input-group
+          #cfgen-element-5-5-input-c.cfgen-input-c
+            input#cfgen-element-5-5.cfgen-submit(type='submit', name='cfgen-element-5-5', value='послать')
+    .cfgen-loading

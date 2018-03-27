@@ -1,0 +1,65 @@
+extend layouts/master
+
+block title
+	| Ristorante 34
+
+block append metatags 
+	meta(name='description', content='A description of the page')
+
+block content
+	// Hero page image
+	.hero__page.hero__page--home
+	
+	// Page container
+	.grid-container
+		.page__container.page__container--home
+			.grid-x
+				.large-9.medium-7.small-12.column
+					.main__content
+						.grid-x
+							.large-6.medium-12.small-12.column
+								h2 リストランテ　アル・トレンタクアットロ
+								p
+									| すべては１９６８年に始まった。当時、エミリア・ローマニャの海岸沿いで戦後に建設された、ミラノ・マリッティマのホテル・インテルナツォナーレを売ったヴァルテル　カサリーニは、ローマで長い歴史を持つマリオ・デ・フィオーリ通りで「リストランテ　アル・トレンタクアットロ」をオープン。
+								p
+									|妻のマリア・ルイサと、ここで味わえる様々なメニューの大部分を創作したオーナーの息子、ニコーラの協力で、レストランは当時から伝統と改新をもとに営まれてきました。
+								a.go__to-page(href="about.html") 続け
+							.large-6.medium-12.small-12.column
+								h2 料理
+								p
+									| オーナーと息子の二コラ　カサリーニを中心として、ローマとイタリアの伝統的な料理をベースに、常に新しいビジョンを持って良質な材料とバラエティ豊かなメニューでお客様をお迎えいたしております。
+								p
+									| １９６８年開業当時から、今日に渡って「トレンタクアットロ」のポリシーは、妥当な価格設定ながら「ベスト」を尽くす事です。
+								a.go__to-page(href="menu.html") 続け
+						.clear__section
+						.where__homepage
+							.grid-x
+								.large-6.medium-6.small-12.column
+									h2 住所
+									#map-ris34
+								.large-6.medium-6.small-12.column
+									h2.is--transparent Dove siamo
+									p
+										| リストランテ　アル・トレンタクアットロ
+										br
+										| ヴィア・マリオ・デ・フィオーリ　３４番 （スペイン広場）
+										br
+										| ００１８７ローマ
+									p
+										|	Tel. +39 06 6795091
+										br
+										| Fax +39 06 6786980
+									p
+										|e-mail: 
+										a(href="mailto:ristorante34@yahoo.it") ristorante34@yahoo.it
+				.large-3.medium-5.small-12.column
+					.sidebar__content
+						img(src="/images/decoration-top.png", alt="")
+						img(src="/images/gruppo.jpg", alt="")
+						a(href="/images/download/menu-cocktail.pdf", target="_blank")
+							img(src="/images/cocktail.jpg", alt="")
+							h6 新しいレストラン34のカクテルメニューをダウンロードしてください！
+						a(href="", target="_blank")
+							img(src="/images/cartolina.jpg", alt="")
+							//- h6 Sono arrivate le nuove cartoline del "34"!
+						img(src="/images/decoration-bottom.png", alt="")

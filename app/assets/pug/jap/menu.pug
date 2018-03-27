@@ -1,0 +1,51 @@
+extend layouts/master
+
+block title
+	| Ristorante 34 - メニュー
+
+block append metatags 
+	meta(name='description', content='A description of the page')
+
+block content
+	// Hero page image
+	.hero__page.hero__page--menu
+	
+	// Page container
+	.grid-container
+		.page__container.page__container--home
+			.grid-x
+				.large-9.medium-7.small-12.column
+					.main__content
+						.grid-x
+							.large-12.medium-12.small-12.column
+								h2 料理
+								p
+									| オーナーと息子の二コラ　カサリーニを中心として、ローマとイタリアの伝統的な料理をベースに、常に新しいビジョンを持って良質な材料とバラエティ豊かなメニューでお客様をお迎えいたしております。
+								p
+									| １９６８年開業当時から、今日に渡って「トレンタクアットロ」のポリシーは、妥当な価格設定ながら「ベスト」を尽くす事です。 レストランのメニューには数多くの料理が載っています。食欲をそそられる前菜からバラエティに富む肉や魚のパスタ、メインディッシュ、デザートまで、全てが手作り。ワインのリストも、「トレンタクアットロ」で長年勤めているウエーターのサンドロの手によって改良され、それぞれの料理に最も合う最高のワインをお選びいただけます。
+								p
+									| 伝統的なローマ料理はもちろんの事、南イタリアや北イタリアの料理もあり、「イタリア料理を３６０度」ご提供しています。すでに世界でも有名になった「ヒヨコマメとイカのパスタスープ」も是非ご賞味いただきたい。
+								p
+									| 以下、様々な言語のメニューへのリンク。
+								a.menu__button(href="/images/download/menu_italiano_ristorante34.pdf", target="_blank")
+									.lang.ita
+									span Scarica il menu
+								a.menu__button(href="/images/download/menu_inglese_ristorante34.pdf", target="_blank")
+									.lang.eng
+									span Download menu
+								a.menu__button(href="/images/download/menu_russo_ristorante34.pdf", target="_blank")
+									.lang.rus
+									span скачать меню
+								a.menu__button(href="/images/download/menu_giapponese_ristorante34.pdf", target="_blank")
+									.lang.jap
+									span メニューをダウンロード
+								a.menu__button(href="/images/download/menu_francese_ristorante34.pdf", target="_blank")
+									.lang.fra
+									span Télécharger le Menu
+				.large-3.medium-5.small-12.column
+					.sidebar__content
+						img(src="/images/decoration-top.png", alt="")
+						img(src="/images/cuoco.jpg", alt="")
+						h6 Никола
+						img(src="/images/staff-duo.jpg", alt="")
+						img(src="/images/decoration-bottom.png", alt="")

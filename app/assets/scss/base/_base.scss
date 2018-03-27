@@ -24,7 +24,7 @@ a {
   &:hover,
   &:active,
   &:focus {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
   }
 }
@@ -84,6 +84,17 @@ a {
         content: url('/images/decoration-beige.png');
         top: 0;
         left: 0;
+      }
+    }
+    &.page__container--text {
+      li {
+        border: 0 !important;
+        list-style-type: square !important;
+      }
+      strong {
+        font-family: 'Old Standard TT', serif;
+        font-weight: 700;
+        font-size: 1.2rem;
       }
     }
   }

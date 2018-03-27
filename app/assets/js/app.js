@@ -5,7 +5,7 @@ $(document).ready(function() {
   // Cookie Bar
   // ----------------------------------------
   $.cookieBar({
-   message: "Cliccando su OK, l’utente accetta l’utilizzo dei cookie di terze parti. Per maggiori informazioni, anche in ordine alla disattivazione, è possibile consultare l'<a class='cookie-link-2' href='/cookie.html'>informativa cookie completa</a>.",
+   message: "If you click on the OK button, you accept the use of third-party cookies. For more information, also with regard to deactivation, it is possible to consult the <a class='cookie-link-2' href='/cookie.html'>complete cookie policy</a>.",
    acceptText: 'Ok',
    fixed: true,
    bottom: true
@@ -100,43 +100,30 @@ $(document).ready(function() {
   });
 
   $(".language a").click(function(event){
-
     event.preventDefault();
-
     var newLang = $(this).data("lang");
-
     var urlPieces = window.location.pathname.split( '/' );
-
     var langs = ['eng', 'ita', 'jap', 'rus'];
-
     if(newLang == 'ita'){
-
-        if(urlPieces.length == 2 && !langs.includes(urlPieces[1])){
-            window.location.href = '/' + urlPieces[1];
-        }
-
-        if(urlPieces.length == 3 && !langs.includes(urlPieces[2]) &&  langs.includes(urlPieces[1])){
-            window.location.href = '/' + urlPieces[2];
-        }
-
+      if(urlPieces.length == 2 && !langs.includes(urlPieces[1])){
+          window.location.href = '/' + urlPieces[1];
+      }
+      if(urlPieces.length == 3 && !langs.includes(urlPieces[2]) &&  langs.includes(urlPieces[1])){
+          window.location.href = '/' + urlPieces[2];
+      }
     }else{
-        if(urlPieces.length == 2 && !langs.includes(urlPieces[1])){
-            window.location.href = '/' + newLang + '/' + urlPieces[1];
-        }
-
-        if(urlPieces.length == 3 && !langs.includes(urlPieces[2]) &&  langs.includes(urlPieces[1])){
-            window.location.href = '/' + newLang + '/' + urlPieces[2];
-        }
+      if(urlPieces.length == 2 && !langs.includes(urlPieces[1])){
+          window.location.href = '/' + newLang + '/' + urlPieces[1];
+      }
+      if(urlPieces.length == 3 && !langs.includes(urlPieces[2]) &&  langs.includes(urlPieces[1])){
+          window.location.href = '/' + newLang + '/' + urlPieces[2];
+      }
     }
-
-    console.log(newLang);
-    console.log(urlPieces);
-    console.log(langs);
-    console.log(urlPieces.length);
-    console.log(langs.includes(urlPieces[1]));
-
-
-
+    // console.log(newLang);
+    // console.log(urlPieces);
+    // console.log(langs);
+    // console.log(urlPieces.length);
+    // console.log(langs.includes(urlPieces[1]));
   });
 
 });

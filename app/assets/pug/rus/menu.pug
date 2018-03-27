@@ -1,0 +1,51 @@
+extend layouts/master
+
+block title
+	| Ristorante 34 - меню
+
+block append metatags 
+	meta(name='description', content='A description of the page')
+
+block content
+	// Hero page image
+	.hero__page.hero__page--menu
+	
+	// Page container
+	.grid-container
+		.page__container.page__container--home
+			.grid-x
+				.large-9.medium-7.small-12.column
+					.main__content
+						.grid-x
+							.large-12.medium-12.small-12.column
+								h2 О нашей кухне
+								p
+									| Кухню ресторана «34» можно охарактеризовать как традиционно римскую и итальянскую, в то же время всегда очень творческую, благодаря неустанному вниманию хозяев и изобретательности Николы Казалини. Эти люди всегда старались предложить клиенту обширный выбор блюд, при этом никогда не снижая их качества.
+								p
+									| С самого открытия ресторана «34» в 1968 году его политика остается прежней и по сей день - это постоянное стремление предложить лучшее по умеренной цене. В нашем меню действительно множество разнообразных блюд, начиная с закусок и огромного выбора пасты, мясных и рыбных блюд, и заканчивая домашними десертами. За многие годы наша винная карта совершенствовалась, чтобы представить Вам выбор лучших вин, не без помощи легендарных официантов Ренцо и Сандро.
+								p
+									| «34» предлагает не только традиционные блюда римской кухни, но также и хорошо известные блюда северного и южного регионов Италии, что даёт право называть нашу кухню истинно итальянской. А начать увлекательное знакомство с нашим рестораном мы посоветуем с известного во всем мире легендарного супа с нутом и кальмарами.
+								p
+									| Загрузить меню на русском языке можно здесь:
+								a.menu__button(href="/images/download/menu_italiano_ristorante34.pdf", target="_blank")
+									.lang.ita
+									span Scarica il menu
+								a.menu__button(href="/images/download/menu_inglese_ristorante34.pdf", target="_blank")
+									.lang.eng
+									span Download menu
+								a.menu__button(href="/images/download/menu_russo_ristorante34.pdf", target="_blank")
+									.lang.rus
+									span скачать меню
+								a.menu__button(href="/images/download/menu_giapponese_ristorante34.pdf", target="_blank")
+									.lang.jap
+									span メニューをダウンロード
+								a.menu__button(href="/images/download/menu_francese_ristorante34.pdf", target="_blank")
+									.lang.fra
+									span Télécharger le Menu
+				.large-3.medium-5.small-12.column
+					.sidebar__content
+						img(src="/images/decoration-top.png", alt="")
+						img(src="/images/cuoco.jpg", alt="")
+						h6 Никола
+						img(src="/images/staff-duo.jpg", alt="")
+						img(src="/images/decoration-bottom.png", alt="")

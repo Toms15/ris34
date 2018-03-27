@@ -8,6 +8,8 @@
 	margin: .5rem 1.5rem 2rem;
 	&:hover {
 		color: $white;
+		opacity: .5;
+		text-decoration: none;
 	}
 	&.green {
 		background-color: $green;
@@ -70,6 +72,7 @@
 	.menu__button {
 		display: inline-flex;
 		justify-content: center;
+		width: auto;
 	}
 }
 /* Large only */

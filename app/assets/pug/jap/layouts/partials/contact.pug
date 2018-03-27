@@ -1,0 +1,68 @@
+#cfgen-form-5.cfgen-form-container
+  .cfgen-form-content
+    .cfgen-e-c
+      label#cfgen-element-5-6-label.cfgen-label
+        span.cfgen-label-value 名前
+        span.cfgen-required *
+      | &#x9;
+      #cfgen-element-5-6-set-c.cfgen-e-set
+        #cfgen-element-5-6-inputgroup-c.cfgen-input-group
+          #cfgen-element-5-6-input-c.cfgen-input-c
+            input#cfgen-element-5-6.cfgen-type-text.cfgen-form-value(type='text', name='cfgen-element-5-6')
+      | &#x9;
+      .cfgen-clear
+    .cfgen-e-c
+      label#cfgen-element-5-3-label.cfgen-label
+        span.cfgen-label-value メールアドレス
+        span.cfgen-required *
+      | &#x9;
+      #cfgen-element-5-3-set-c.cfgen-e-set
+        #cfgen-element-5-3-inputgroup-c.cfgen-input-group
+          #cfgen-element-5-3-input-c.cfgen-input-c
+            input#cfgen-element-5-3.cfgen-type-email.cfgen-form-value(type='text', name='cfgen-element-5-3')
+      | &#x9;
+      .cfgen-clear
+    .cfgen-e-c
+      label#cfgen-element-5-4-label.cfgen-label
+        span.cfgen-label-value メッセージ
+      | &#x9;
+      #cfgen-element-5-4-set-c.cfgen-e-set
+        #cfgen-element-5-4-inputgroup-c.cfgen-input-group
+          #cfgen-element-5-4-input-c.cfgen-input-c
+            textarea#cfgen-element-5-4.cfgen-type-textarea.cfgen-form-value(name='cfgen-element-5-4')
+      | &#x9;
+      .cfgen-clear
+    .cfgen-e-c
+      label#cfgen-element-5-7-label.cfgen-label
+        span.cfgen-label-value 下のコードを挿入
+      | &#x9;
+      #cfgen-element-5-7-set-c.cfgen-e-set
+        .cfgen-captcha-c
+          img.cfgen-captcha-img(src='/cfgen-form-5/inc/captcha.php', alt='')
+          img.cfgen-captcha-refresh(src='/cfgen-form-5/img/captcha-refresh.png', alt='')
+        | &#x9;&#x9;
+        #cfgen-element-5-7-inputgroup-c.cfgen-input-group
+          #cfgen-element-5-7-input-c.cfgen-input-c
+            input#cfgen-element-5-7.cfgen-captcha-input(type='text', name='cfgen-element-5-7')
+      | &#x9;
+      .cfgen-clear
+    .cfgen-e-c
+      label#cfgen-element-5-8-label.cfgen-label
+        span.cfgen-label-value
+        //- span.cfgen-required *
+      #cfgen-element-5-8-set-c.cfgen-e-set
+        #cfgen-element-5-8-inputgroup-c.cfgen-input-group
+          .cfgen-option-set
+            .cfgen-option-content.cfgen-option-checkbox.cfgen-element-5-8-option-content
+              input#cfgen-element-5-8-0.cfgen-form-value(type='checkbox', name='cfgen-element-5-8', value='お客様の電子メールアドレスはお客様のご要望に応えるために使用され、プライバシーポリシー（法令第196/2003条第13条）に記載されている条件に従って処理されます。')
+              label(for='cfgen-element-5-8-0')
+                | お客様の電子メールアドレスはお客様のご要望に応えるために使用され、
+                a(href="/privacy.html", target="_blank") プライバシーポリシー
+                |  （法令第196/2003条第13条）に記載されている条件に従って処理されます。
+      .cfgen-clear
+    .cfgen-e-c
+      #cfgen-element-5-5-set-c.cfgen-e-set
+        #cfgen-element-5-5-inputgroup-c.cfgen-input-group
+          #cfgen-element-5-5-input-c.cfgen-input-c
+            input#cfgen-element-5-5.cfgen-submit(type='submit', name='cfgen-element-5-5', value='送信')
+    .cfgen-loading

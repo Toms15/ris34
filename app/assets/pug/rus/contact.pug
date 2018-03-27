@@ -1,0 +1,55 @@
+extend layouts/master
+
+block title
+  | Ristorante 34 - Наш адрес
+
+block append metatags 
+  meta(name='description', content='A description of the page')
+
+block content
+  // Hero page image
+  .hero__page.hero__page--contact
+	
+  // Page container
+  .grid-container
+    .page__container.page__container--contact
+      .grid-x
+        .large-9.medium-7.small-12.column
+          .main__content
+            .grid-x
+              .large-6.medium-6.small-12.column
+                h2 Наш адрес
+                p
+                  | Ristorante al 34
+                  br
+                  | Via Mario de’ Fiori 34, (P.zza di Spagna)
+                  br
+                  | 00187 Roma
+                p
+                  |	Tel. +39 06 6795091
+                  br
+                  | Fax +39 06 6786980
+                p
+                  | e-mail: 
+                  a(href="mailto:ristorante34@yahoo.it") ristorante34@yahoo.it
+              .large-6.medium-6.small-12.column
+                h2 Часы работы
+                ul
+                  li
+                    | Открыт каждый день
+                  li
+                    | Понедельник 
+                    span 17.30 - 23.00
+                  li
+                    | Вторник - Воскресенье
+                    span 12.30 - 23.00
+            .clear__section
+            .where__contact
+              .grid-x
+                .large-12.medium-12.small-12.column
+                  #map-ris34
+        .large-3.medium-5.small-12.column
+          .sidebar__content
+            img(src="/images/decoration-top.png", alt="")
+            include layouts/partials/contact
+            img(src="/images/decoration-bottom.png", alt="")

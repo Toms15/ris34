@@ -17,6 +17,11 @@
 		margin-bottom: 1rem;
 		width: 100%;
 	}
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 /* Medium and up */
 @media screen and (min-width: 40em) {}
